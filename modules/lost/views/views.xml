@@ -1,0 +1,44 @@
+<odoo>
+  <data>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="lost.players_action_window">
+      <field name="name">lost Player</field>
+      <field name="res_model">lost.player</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lost.survivors_action_window">
+      <field name="name">Lost Survivors</field>
+      <field name="res_model">lost.survivor</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lost.islands_action_window">
+      <field name="name">Lost Island</field>
+      <field name="res_model">lost.island</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="lost.buildings_action_window">
+      <field name="name">Lost Building</field>
+      <field name="res_model">lost.building</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Top menu item -->
+
+    <menuitem name="Lost" id="lost.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Game" id="lost.game" parent="lost.menu_root" />
+    <menuitem name="Game aux" id="lost.aux" parent="lost.menu_root" />
+    <menuitem name="Clients" id="lost.clients" parent="lost.menu_root" />
+
+    <!-- actions -->
+    <menuitem name="Survivors" id="lost.survivors_list" parent="lost.game" action="lost.survivors_action_window" />
+    <menuitem name="Buildings" id="lost.buildings_list" parent="lost.game" action="lost.buildings_action_window" />
+    <menuitem name="Islands" id="lost.islands_list" parent="lost.game" action="lost.islands_action_window" />
+    <menuitem name="Players" id="lost.players_list" parent="lost.clients" action="lost.players_action_window" />
+  </data>
+</odoo>

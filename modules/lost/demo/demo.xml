@@ -1,0 +1,80 @@
+<odoo>
+    <data>
+
+      <record id="demo_lost_players_1">
+        <field name="name">BOT</field>
+        <field name="island">BOT ISLAND</field>/>
+      </record>
+
+      <record id="demo_lost_island_1">
+        <field name="name">BOT ISLAND</field>
+        <field name="productivity">0</field>
+        <field name="security">0</field>
+        <field name="supply">0</field>
+      </record>
+
+      <record id="demo_lost_buildings_1">
+        <field name="name">Turret_V1</field>
+        <field name="productivity">0</field>
+        <field name="security">5</field>
+        <field name="supply">0</field>
+      </record>
+
+      <record id="demo_lost_buildings_2">
+        <field name="name">Garage_V1</field>
+        <field name="productivity">0</field>
+        <field name="security">0</field>
+        <field name="supply">5</field>
+      </record>
+
+      <record id="demo_lost_buildings_3">
+        <field name="name">House_V1</field>
+        <field name="productivity">5</field>
+        <field name="security">0</field>
+        <field name="supply">0</field>
+      </record>
+
+      <record id="demo_lost_buildings_4">
+        <field name="name">Turret_V2</field>
+        <field name="productivity">0</field>
+        <field name="security">15</field>
+        <field name="supply">0</field>
+      </record>
+
+      <record id="demo_lost_buildings_5">
+        <field name="name">Garage_V2</field>
+        <field name="productivity">0</field>
+        <field name="security">0</field>
+        <field name="supply">15</field>
+      </record>
+
+      <record id="demo_lost_buildings_6">
+        <field name="name">House_V2</field>
+        <field name="productivity">15</field>
+        <field name="security">0</field>
+        <field name="supply">0</field>
+      </record>
+      <record id="demo_lost_buildings_7">
+        <field name="name">Turret_V3</field>
+        <field name="productivity">0</field>
+        <field name="security">30</field>
+        <field name="supply">0</field>
+      </record>
+
+      <record id="demo_lost_buildings_8">
+        <field name="name">Garage_V3</field>
+        <field name="productivity">0</field>
+        <field name="security">0</field>
+        <field name="supply">30</field>
+      </record>
+
+      <record id="demo_lost_buildings_9">
+        <field name="name">House_V3</field>
+        <field name="productivity">30</field>
+        <field name="security">0</field>
+        <field name="supply">0</field>
+      </record>
+      
+
+    </data>
+</odoo>

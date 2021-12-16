@@ -1,0 +1,86 @@
+<odoo>
+    <data>
+
+      <record model="ir.ui.view" id="lost.survivor_list">
+        <field name="name">Lost Survivor</field>
+        <field name="model">lost.survivor</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name" />
+            <field name="avatar" widget="image" class="fotoMini"/>
+            <!--<field name="age" />-->
+            <field name="date_of_birth" />
+            <field name="mentalHealth" />
+            <field name="hungry" />
+            <field name="occupation" />
+            <field name="island" />          
+            
+          </tree>
+        </field>
+      </record>
+      
+
+      <record model="ir.ui.view" id="lost.survivor_form">
+        <field name="name">lost Survivor List</field>
+        <field name="model">lost.survivor</field>
+        <field name="arch" type="xml">
+          <form>
+            <sheet>
+              <h1><field name="name" /></h1>
+              <field name="avatar" widget="image" class="fotoMini"/>
+              <group>
+                <!--<field name="age" />-->
+                <field name="date_of_birth" />
+                <field name="mentalHealth" />
+                <field name="hungry" />
+                <field name="occupation" />
+                <field name="island" />      
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+
+
+      <record model="ir.ui.view" id="lost.survivor_kanban">
+        <field name="name">lost.survivor kanban</field>
+        <field name="model">lost.survivor</field>
+        <field name="arch" type="xml">
+          <kanban>
+            <field name="id" />
+            <!--<field name="age" />-->
+            <field name="date_of_birth" />
+            <field name="mentalHealth" />
+            <field name="hungry" />
+            <field name="occupation" />
+            <field name="island" />
+            <templates>
+              <t t-name="kanban-box">
+                <div t-attf-class="oe_kanban_card o_kanban_record_has_image_fill ">
+                  <div class="o_kanban_image_fill_left o_kanban_image_full d-none d-md-block lost_img_kanban"
+                  t-attf-style="background-image:url('#{kanban_image('lost.survivor', 'avatar', record.id.value, placeholder)}')">
+                  </div>
+            
+                  <div class="oe_kanban_details d-flex flex-column">
+                    <a type="open"><h4 class="o_kanban_record_title oe_partner_heading"><field name="name"/></h4></a>
+                      <ul>
+                        <!--<li>age: <field name="age"/></li>-->
+                        <li>Date of Birth: <field name="date_of_birth"/></li>
+                        
+                        <li>mentalHealth: <field name="mentalHealth"/></li>
+                        <li>hungry: <field name="hungry"/></li>
+                        <li>occupation: <field name="occupation"/></li>
+                        <li>island: <field name="island"/></li>                          
+                      </ul>
+                  </div>                               
+                    </div>
+              </t>
+            </templates>
+          </kanban>
+        </field>
+      </record>
+
+      
+
+    </data>
+</odoo>

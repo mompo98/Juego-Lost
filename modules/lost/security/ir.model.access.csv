@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_lost_survivor,lost.survivor,model_lost_survivor,base.group_user,1,1,1,1
+access_lost_player,lost.player,model_lost_player,base.group_user,1,1,1,1
+access_lost_island,lost.island,model_lost_island,base.group_user,1,1,1,1
+access_lost_building,lost.building,model_lost_building,base.group_user,1,1,1,1

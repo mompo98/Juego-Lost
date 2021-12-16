@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+      <!-- explicit list view definition -->
+  
+      <record model="ir.ui.view" id="lost.player_list">
+        <field name="name">Lost Player</field>
+        <field name="model">lost.player</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name" />
+            <field name="island" />
+          </tree>
+        </field>
+      </record>
+  
+      <record model="ir.ui.view" id="lost.player_form">
+        <field name="name">Lost Player</field>
+        <field name="model">lost.player</field>
+        <field name="arch" type="xml">
+          <form>
+          <header>
+          </header>
+            <sheet>
+              <h1><field name="name" /></h1>
+              <group>
+                <field name="island" />
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+    </data>
+</odoo>

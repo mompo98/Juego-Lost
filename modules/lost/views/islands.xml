@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+  
+      <record model="ir.ui.view" id="lost.island_list">
+        <field name="name">Lost Island</field>
+        <field name="model">lost.island</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name" />
+            <field name="player" />
+            <field name="gold"/>
+            <field name="productivity"/>
+            <field name="security"/>
+            <field name="supply"/>
+            <field name="survivors"/>
+            <field name="buildings"/>
+            <button name="generate_gold" type="object" string="Generate Gold" class="oe_highlight" />
+            <button name="empty_gold" type="object" string="Empty Gold" class="oe_highlight" />
+          </tree>
+        </field>
+      </record>
+
+      <record model="ir.ui.view" id="lost.island_form">
+        <field name="name">Lost Island</field>
+        <field name="model">lost.island</field>
+        <field name="arch" type="xml">
+          <form>
+            <sheet>
+              <h1><field name="name" /></h1>
+              <group>
+                <field name="player" />
+                <field name="gold"/>
+                <field name="productivity"/>
+                <field name="security"/>
+                <field name="supply"/>
+              </group>
+              <notebook>
+                <page name="survivors" string ="Survivors">
+                  <field name="survivors"/>
+                </page>
+                <page name="buildings" string ="Buildings">
+                  <field name="buildings"/>
+                </page>
+              </notebook>
+            </sheet>
+          </form>
+        </field>
+      </record>
+    </data>
+</odoo>

@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+  
+      <record model="ir.ui.view" id="lost.building_list">
+        <field name="name">Lost Building</field>
+        <field name="model">lost.building</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name" />
+            <field name="productivity"/>
+            <field name="security"/>
+            <field name="supply"/>
+            <field name="island"/>
+            
+          </tree>
+        </field>
+      </record>
+
+      <record model="ir.ui.view" id="lost.building_form">
+        <field name="name">Lost Building</field>
+        <field name="model">lost.building</field>
+        <field name="arch" type="xml">
+          <form>
+            <sheet>
+              <h1><field name="name" /></h1>
+              <group>
+                <field name="productivity"/>
+                <field name="security"/>
+                <field name="supply"/>
+                <field name="island"/>
+              </group>
+            </sheet>
+          </form>
+        </field>
+      </record>
+  </data>
+</odoo>

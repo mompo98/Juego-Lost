@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+      
+<template id="assets_backend" name="lost assets" inherit_id="web.assets_backend">
+    <xpath expr="//script[last()]" position="after">
+	    <link rel="stylesheet" href="/lost/static/src/css/lost.css"/>
+    </xpath>
+</template>
+
+    </data>
+</odoo>
